@@ -9,7 +9,7 @@ NAME_STL=$(BIN_DIR)stl
 NAME=$(BIN_DIR)ft_containers
 
 CFLAGS=-Wall -Wextra -Werror -I $(INCLUDES) -g -std=c++98
-CFILES=$(addprefix $(SRC_DIR), main.cpp Map.cpp Stack.cpp Vector.cpp)
+CFILES=$(addprefix $(SRC_DIR), main.cpp)
 CFILES_STL=$(addprefix $(SRC_STL_DIR), main.cpp)
 OBJS=$(patsubst $(SRC_DIR)%.cpp, $(OBJ_DIR)%.o, $(CFILES))
 OBJS_STL=$(patsubst $(SRC_STL_DIR)%.cpp, $(OBJ_STL_DIR)%.o, $(CFILES_STL))
